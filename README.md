@@ -1,4 +1,4 @@
-# problem-solving
+# Code Solutions and Algorithm concepts.
 
 This includes my solutions in Codewars and Leetcode.
 
