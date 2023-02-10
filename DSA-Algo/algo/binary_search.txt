@@ -1,0 +1,8 @@
+- Useful when you need to find the index of an element in a large array and the array is sorted.
+- Require: SORTED
+
+Apply:
+    - Finding a target value in a sorted array
+    - Finding the first or last occurrence of a target value in a sorted array
+    - Finding the peak element in a mountain array
+    - Finding the minimum or maximum value in a rotated sorted array

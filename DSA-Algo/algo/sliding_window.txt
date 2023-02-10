@@ -5,14 +5,14 @@
     and update a certain value or set of values over a range of elements.
 
 Apply: 
-String problems: finding the longest substring without repeating characters, 
+    - String problems: finding the longest substring without repeating characters, 
                 where you can use a sliding window to keep track of the characters in the current substring.
 
-Array problems: finding the maximum subarray sum, 
+    - Array problems: finding the maximum subarray sum, 
                 where you can use a sliding window to keep track of the sum of the current subarray.
 
-Dynamic programming problems: finding the minimum number of coins to make a certain amount of change, 
+    - Dynamic programming problems: finding the minimum number of coins to make a certain amount of change, 
                             where you can use a sliding window to keep track of the number of coins needed to make a certain value.
 
-Two pointers problems: finding the two numbers in an array that sum to a target value, 
-                        where you can use a sliding window to keep track of the two numbers that sum to the target value.
+    - Two pointers problems: finding the two numbers in an array that sum to a target value, 
+                        where you can use a sliding window to keep track of the two numbers that sum to the target value.`
