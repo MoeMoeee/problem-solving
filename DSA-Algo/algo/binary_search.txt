@@ -1,6 +1,7 @@
 - Useful when you need to find the index of an element in a large array and the array is sorted.
-- Require: SORTED
+- Complexity: O(logn), n is number of elements of array
 
+- Require: SORTED
 Apply:
     - Finding a target value in a sorted array
     - Finding the first or last occurrence of a target value in a sorted array
