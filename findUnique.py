@@ -1,7 +1,6 @@
 def find_uniq(arr):
     uniqueList = set(arr)  # simplfy the list by not allowing duplicate
     uniqueNumber = 0
-
     min = arr.count(arr[0])
 
     for item in uniqueList:
