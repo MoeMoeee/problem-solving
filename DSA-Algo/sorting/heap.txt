@@ -1,0 +1,9 @@
+top() - min() - max()  ====  O(1)
+insert() - remove() ==== O(logn)
+heapify() ==== O(n)  (construct heap)
+
+Apply:
+- Shortest path
+- Closest point
+- Min cost to connect...
+- Graph algo
