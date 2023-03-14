@@ -1,1 +1,4 @@
-divides a large data array into smaller ones (called partition)using a pivot. 
+divides a large data array into smaller ones (called partition) using a pivot. 
+
+Optimize by getting median of the list => better complexity
+
