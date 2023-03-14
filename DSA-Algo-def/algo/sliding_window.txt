@@ -15,4 +15,4 @@ Apply:
                             where you can use a sliding window to keep track of the number of coins needed to make a certain value.
 
     - Two pointers problems: finding the two numbers in an array that sum to a target value, 
-                        where you can use a sliding window to keep track of the two numbers that sum to the target value.`
+                        where you can use a sliding window to keep track of the two numbers that sum to the target value.

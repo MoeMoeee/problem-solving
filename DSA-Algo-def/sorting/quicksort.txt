@@ -1,0 +1,1 @@
+divides a large data array into smaller ones (called partition)using a pivot. 
