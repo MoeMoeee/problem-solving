@@ -25,10 +25,14 @@ class LinkedList:
 
     def append(self, data):
         newNode = Node(data)
-        self.tail.next = newNode
-        self.tail = newNode
+        if (self.head):
+            self.tail.next = newNode
+            self.tail = newNode
+        else:  # if none is in the list
+            self.tail = newNode
+            self.head = newNode
 
-    def insert(self, data):  # insert any positions
+    def insert(self, data, index):  # insert any positions
         newNode = Node(data)
 
         if (self.head):
@@ -69,13 +73,6 @@ class LinkedList:
 
 if __name__ == '__main__':
     ll = LinkedList()
-    ll.insert(1)
-    ll.insert(2)
-    ll.insert(3)
-    ll.insert(4)
-    ll.prepend(0)
-    ll.append(5)
-
-    print(ll.append(2))
+    ll.append(1)
 
     ll.printLinkedList()
