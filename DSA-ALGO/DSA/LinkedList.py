@@ -19,9 +19,13 @@ class LinkedList:
 
     def prepend(self, data):
         newNode = Node(data)
-        prev_head = self.head
+        newNode.next = self.head
         self.head = newNode
-        newNode.next = prev_head  # the next value should be the previous head
+
+        # other way to implement
+        # prev_head = self.head
+        # self.head = newNode
+        # newNode.next = prev_head  # the next value should be the previous head
 
     def append(self, data):
         newNode = Node(data)
@@ -34,13 +38,21 @@ class LinkedList:
 
     def insert(self, data, index):  # insert any positions
         newNode = Node(data)
+        counter = 0
 
         if (self.head):
             current = self.head
-            while current.next:
-                current = current.next  # traverse through the LinkedList
-            current.next = newNode  # insert node at the end after the traversal
-            self.tail = newNode
+            prev_node = self.head
+            while current:
+                if counter == index:
+                    prev_node.next = newNode
+                    newNode.next = current
+                    break
+                else:
+                    prev_node = current
+                    current = current.next  # increment to traverse through the LinkedList
+                    counter += 1  # keep track the index
+
         else:  # if no head -> insert the new node as the head
             self.tail = newNode
             self.head = newNode
@@ -74,5 +86,8 @@ class LinkedList:
 if __name__ == '__main__':
     ll = LinkedList()
     ll.append(1)
-
+    ll.append(2)
+    ll.append(4)
+    ll.prepend(0)
+    ll.insert(3, 3)
     ll.printLinkedList()
