@@ -8,24 +8,6 @@
 # Space Complexity	O(logn) for best, worst, average
 # Stability	        No
 
-# def partition(arr, start, end):
-#     # choose a random pivot index
-#     pivot_index = random.randint(start, end)
-
-#     # swap the pivot element with the last element
-#     arr[pivot_index], arr[end] = arr[end], arr[pivot_index]
-
-#     # set the pivot as the last element
-#     pivot = arr[end]
-
-#     # partition the array
-#     i = start - 1
-#     for j in range(start, end):
-#         if arr[j] < pivot:
-#             i += 1
-#             arr[i], arr[j] = arr[j], arr[i]
-#     arr[i+1], arr[end] = arr[end], arr[i+1]
-#     return i+1
 
 import random
 
