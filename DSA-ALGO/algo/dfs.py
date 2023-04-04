@@ -1,6 +1,6 @@
 
 
-def bfs (graph, start):
+def bfs(graph, start):
     visited = [] # list keeping track of the visited nodes
     result = []
     visited.append(start)
