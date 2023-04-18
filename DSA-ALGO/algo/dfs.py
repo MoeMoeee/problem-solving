@@ -9,7 +9,6 @@ def bfs(graph, start):
     while result:
         node = result.pop()
         for neighbor in graph[node]:
-            # visited.append(node)
             if neighbor not in visited:
                 visited.append(neighbor)
                 result.append(neighbor)
