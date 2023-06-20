@@ -19,7 +19,7 @@
 
 
 def peak_ele (arr):
-    # O(log n) space: O(1)
+    # time O(log n) || space: O(1)
     result = 0
     
     if len(arr) == 1:
