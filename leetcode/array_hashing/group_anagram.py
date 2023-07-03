@@ -1,6 +1,6 @@
-class Solution:
+# class Solution:
     # def groupAnagrams(self, strs):
-    ### TLE
+    ### TLE since this is O(n^2)
     #     result = []
     #     check_lst = [0 for word in strs]
 
@@ -33,6 +33,29 @@ class Solution:
     #             result.append(temp)
                 
     #     return result
+class Solution:
+    def groupAnagrams(self, strs):
+        # O(n*m*log(m) where n is the length of the list and m is the longest words)
+        groups = {}
+        temp = []
+        result = []
+        
+        for i in range(len(strs)): 
+            sorted_word = tuple(sorted(strs[i]))
+
+            if sorted_word not in groups:
+                groups[sorted_word] = [i]
+            else:
+                groups[sorted_word].append(i)
+            
+        for values in groups.values():
+            temp = []
+            for value in values:
+                temp.append(strs[value])
+            result.append(temp)
+        return result
+            
+            
         
 if __name__ == '__main__':
     a = Solution()
