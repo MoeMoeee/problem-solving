@@ -6,6 +6,7 @@ class Solution(object):
         :type nums: List[int]
         :type k: int
         :rtype: List[int]
+        Time Complexity: m*log m with m is the unique occurence of the num -> could be n log n if all num is the same 
         """
         result = []
         group = defaultdict(int) #key: num || value: occurence
@@ -15,7 +16,7 @@ class Solution(object):
             group[num] += 1
         
         # sort the values acscending
-        sorted_values = sorted(group.values(), reverse = True)
+        sorted_values = sorted(group.values(), reverse = True) #m*log m
         
         # only get the k_th element 
         k_element = sorted_values[:k]
