@@ -16,16 +16,34 @@ class Solution(object):
 
         return max_profit
 
+    
+
+
+
+
 
         
+            
         
 
-
-
-
+        
 if __name__ == '__main__':
     a = Solution()
-    prices = [7,1,5,3,6,4]
-    print(a.maxProfit(prices))
+    arr = [[0,1,0,0,0],
+            [1,1,1,0,0],
+            [1,1,0,0,0],
+            [0,1,0,1,0]]
+    print(a.sol(arr, 1,2,2))
+
+        
+        
+
+
+
+
+# if __name__ == '__main__':
+#     a = Solution()
+#     prices = [7,1,5,3,6,4]
+#     print(a.maxProfit(prices))
     
     
